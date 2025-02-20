@@ -1,4 +1,4 @@
-from ..encapsulamento_1.Acesso_Numeros import Acesso_Numeros
+from comparacao_python.encapsulamento_1.Acesso_Numeros import Acesso_Numeros
 
 class Verifica_Encapsulamento_2:
     @staticmethod
@@ -11,7 +11,7 @@ class Verifica_Encapsulamento_2:
         #chave.c = 30; NÃO É POSSÍVEL ACESSAR VARIÁVEL PRIVATE DIRETAMENTE DE FORA DA CLASSE
         chave.set_numero("c", 30)
         #chave.d = 40; NÃO É POSSÍVEL ACESSAR VARIÁVEL PROTECTED DIRETAMENTE DE FORA DO PACOTE
-         #private e protected só dá para mexer dentro da classe em python
+        #private e protected só dá para mexer dentro da classe em python
         chave.set_numero("d", 40)
 
         chave.mostra_numero()
