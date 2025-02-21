@@ -1,4 +1,4 @@
-from comparacao_python.encapsulamento_1.Acesso_Numeros import Acesso_Numeros
+from ..encapsulamento_1.Acesso_Numeros import Acesso_Numeros
 
 class Verifica_Encapsulamento_2:
     @staticmethod
