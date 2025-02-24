@@ -1,6 +1,7 @@
 package get_set;
 
 public class Novo_Automovel {
+	
 	private String marca;
 	private String modelo;
 	private String cor;

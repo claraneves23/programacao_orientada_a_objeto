@@ -1,6 +1,7 @@
 package get_set;
 
 public class Dados_Contribuinte {
+	
 	private String nome;
 	private String CPF;
 	private String CNPJ;
