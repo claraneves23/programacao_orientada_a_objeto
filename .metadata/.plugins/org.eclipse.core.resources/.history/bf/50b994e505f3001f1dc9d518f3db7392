@@ -13,9 +13,9 @@ public class Informa_dados {
 		a.setCartao(JOptionPane.showInputDialog("Qual o numero do cartão do contribuinte?"));
 		
 		System.out.println("nome do contribuinte:\t"+ a.getNome());
-		System.out.println("CPF do contribuinte:\t"+ a.getCPF());
+		System.out.println("CPF do contribuinte:\t"+ a.geCPF());
 		System.out.println("CNPF do contribuinte:\t"+ a.getCNPJ());
-		System.out.println("número do cartao do contribuinte:\t"+ a.getCartao());
+		System.out.println("número do cartao do contribuinte:\t"+ a.geCartao());
 		
 	}
 

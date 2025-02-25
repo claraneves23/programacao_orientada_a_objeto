@@ -23,13 +23,13 @@ public class Dados_Contribuinte {
 	public String getNome() {
 		return nome;
 	}
-	public String getCPF() {
+	public String geCPF() {
 		return CPF;
 	}
 	public String getCNPJ() {
 		return CNPJ;
 	}
-	public String getCartao() {
+	public String geCartao() {
 		return cartao;
 	}
 }
