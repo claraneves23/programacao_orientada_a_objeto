@@ -46,8 +46,14 @@ Lattes:  http://lattes.cnpq.br/1664094500114045
 
 * O método construtor constrói o objeto com valores, é invocado pelo operador new quando o objeto é criado e aloca espaço na memória para a manipulação do objeto. Deve possuir o mesmo nome da classe .
 
+### Métodos Destrutores (finalizers) 
 
+* Liberam os recursos usados pelos objetos durante a execução do programa. A linguagem Java possui um processo automático para limpeza de objetos não utilizados depois de um certo tempo, nomeado como "Coleta Automática de Lixo" (automatic garbage collection).
 
+### Variável Static 
+
+* Declaração de variável static dentro de uma classe: a atribuição de valor prevalece para a última instância de objeto.
+* Declaração de variável static dentro de uma classe: a atribuição de valor estará de acordo com a última instância do objeto.
 
 
 
