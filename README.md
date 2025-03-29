@@ -55,7 +55,7 @@ Lattes:  http://lattes.cnpq.br/1664094500114045
 * Declaração de variável static dentro de uma classe: a atribuição de valor prevalece para a última instância de objeto.
 * Declaração de variável static dentro de uma classe: a atribuição de valor estará de acordo com a última instância do objeto.
 
-## Herança em Programação Orientada a Objetos
+## Aula 04
 
 ### Conceito de Herança  
 Herança é um princípio da Programação Orientada a Objetos (POO) que define uma relação hierárquica entre classes. Nesse modelo:  
