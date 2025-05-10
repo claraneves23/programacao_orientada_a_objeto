@@ -4,59 +4,33 @@ import javax.swing.*;
 
 
 public class Ordem_Servico {
+    static Oficina_Mecanica of = null;
 
-    public static void main (String Args[]){
-        Oficina_Mecanica oficina = new Oficina_Mecanica();
-        oficina.set_marca(JOptionPane.showInputDialog("Digite a marca do carro: "));
-        oficina.set_modelo(JOptionPane.showInputDialog("Digite o modelo do carro: "));
+    public Oficina_Mecanica Ordem_Servico(){
+        String a;
+        a = JOptionPane.showInputDialog(null, "Digite a marca do veículo: Ford ou Volks ou outra marca", "Oficina",0);
 
-        if (oficina.get_marca().equalsIgnoreCase("Ford") && oficina.get_modelo().equalsIgnoreCase("Belina") )
-        {
-            Concessionaria_Ford ford = new Concessionaria_Ford();
+    if(a.equals("Volks")){
+        of = new Concessionaria_Volks();
+        of.set_marca("Volks");
+        of.set_modelo("fusca");
+        System.out.println(of.get_marca() + "\n" + of.get_modelo() + "\n" + of.funilaria() + "\n" + of.pintura() + "\n" + of.eletrica());
+    }
 
-            int tipo = Integer.parseInt(JOptionPane.showInputDialog("Digitar opção: 1 para pintura, 2 para funilaria e 3 para eletrica"));
-            switch (tipo){
-                case 1:
-                    JOptionPane.showMessageDialog(null, ford.pintura());
-                    break;
-                case 2:
-                    JOptionPane.showMessageDialog(null, ford.funilaria());
-                    break;
-                case 3:
-                    JOptionPane.showMessageDialog(null, ford.eletrica());
-                    break;
-                default: {
-                    System.out.println("valor inválido");
-                    System.exit(0);
-                }
-            }
+    if(a.equals("Ford")){
+            of = new Concessionaria_Ford();
+            of.set_marca("Ford");
+            of.set_modelo("belina");
+            System.out.println(of.get_marca() + "\n" + of.get_modelo() + "\n" + of.funilaria() + "\n" + of.pintura() + "\n" + of.eletrica());
+    }
 
+    if(a.equals("outra marca")){
+            of = new Oficina_Mecanica();
+            of.set_marca("Fiat");
+            of.set_modelo("Uno");
+            System.out.println(of.get_marca() + "\n" + of.get_modelo() + "\n" + of.funilaria() + "\n" + of.pintura() + "\n" + of.eletrica());
+    }
 
-        } else if (oficina.get_marca().equalsIgnoreCase("Volkswagen") && oficina.get_modelo().equalsIgnoreCase("Fusca") ) {
-            Concessionaria_Volks volks = new Concessionaria_Volks();
-
-            int tipo = Integer.parseInt(JOptionPane.showInputDialog("Digitar opção: 1 para pintura, 2 para funilaria e 3 para eletrica"));
-            switch (tipo) {
-                case 1:
-                    JOptionPane.showMessageDialog(null, volks.pintura());
-                    break;
-                case 2:
-                    JOptionPane.showMessageDialog(null, volks.funilaria());
-                    break;
-                case 3:
-                    JOptionPane.showMessageDialog(null, volks.eletrica());
-                    break;
-                default: {
-                    System.out.println("valor inválido");
-                    System.exit(0);
-                }
-
-            }
-
-        }
-        else {
-
-            JOptionPane.showMessageDialog(null, oficina.toString());
-        }
+    return of;
     }
 }
